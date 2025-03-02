@@ -1,0 +1,58 @@
+{
+  "model_name": "BSL Sign Language Recognition",
+  "model_description": "A multimodal model that recognizes British Sign Language signs using video frames, hand landmarks, and hand features",
+  "input_details": [
+    {
+      "name": "frame_input",
+      "shape": "NUM_FRAMES x HEIGHT x WIDTH x 3",
+      "description": "Video frames"
+    },
+    {
+      "name": "landmark_input",
+      "shape": "NUM_FRAMES x NUM_LANDMARKS",
+      "description": "MediaPipe hand landmarks"
+    },
+    {
+      "name": "feature_input",
+      "shape": "NUM_FRAMES x NUM_FEATURES",
+      "description": "Calculated hand features"
+    }
+  ],
+  "output_details": [
+    {
+      "name": "output",
+      "shape": "1 x 20",
+      "description": "Class probabilities"
+    }
+  ],
+  "num_classes": 20,
+  "class_names": [
+    "1",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "2",
+    "20",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "preprocessing": {
+    "num_frames": 20,
+    "image_size": 224,
+    "normalize": "0-1"
+  },
+  "creation_date": "2025-02-28",
+  "framework": "TensorFlow 2.18.0"
+}

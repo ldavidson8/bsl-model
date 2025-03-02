@@ -1,0 +1,19 @@
+[project]
+name = "bsl-model"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "ipython>=9.0.0",
+    "matplotlib>=3.10.1",
+    "matplotlib-inline>=0.1.7",
+    "mediapipe>=0.10.11",
+    "numpy>=2.0.2",
+    "pydot>=3.0.4",
+    "scikit-learn>=1.6.1",
+    "seaborn>=0.13.2",
+    "tensorflow>=2.18.0",
+    "tflite-support>=0.4.4",
+]
